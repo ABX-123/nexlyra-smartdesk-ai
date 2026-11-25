@@ -1,0 +1,31 @@
+column_name,meaning,data_type
+ticket_id,Unique identifier for each ticket.,VARCHAR(50)
+created_at,Date and time the ticket was created.,TIMESTAMP
+client_segment,Client's business segment.,VARCHAR(50)
+client_industry,Client's industry.,VARCHAR(100)
+service_line,Type of service requested.,VARCHAR(100)
+request_channel,Channel used to submit the request.,VARCHAR(50)
+requester_role,Role of the person submitting the request.,VARCHAR(50)
+subscription_tier,Client's subscription level.,VARCHAR(50)
+region,Client's geographical region.,VARCHAR(50)
+issue_category,Main category of the issue.,VARCHAR(100)
+issue_subcategory,Specific type of issue.,VARCHAR(100)
+subject,Short title of the ticket.,VARCHAR(250)
+description,Detailed description of the issue.,TEXT
+priority_reported,Priority level reported by the client.,VARCHAR(20)
+sentiment_score,Numerical sentiment score of the ticket.,"DECIMAL(5,2)"
+sentiment_label,"Sentiment classification (positive, neutral, negative).",VARCHAR(15)
+attachment_count,Number of attachments included.,INT
+previous_tickets_30d,Number of tickets submitted in the previous 30 days.,INT
+client_tenure_months,Number of months the client has been subscribed.,INT
+active_projects,Number of active projects for the client.,INT
+business_impact,Business impact level of the issue.,VARCHAR(50)
+business_hours_received,Whether the ticket was received during business hours (1/0).,BOOLEAN
+first_response_minutes,"Time taken to provide the first response, in minutes.","DECIMAL(10,2)"
+assigned_team,Team responsible for handling the ticket.,VARCHAR(50)
+agent_experience_months,Agent's experience in months.,INT
+reopen_count,Number of times the ticket was reopened.,INT
+resolution_hours,"Time taken to resolve the ticket, in hours.","DECIMAL(10,2)"
+escalated,Whether the ticket was escalated (1/0).,BOOLEAN
+sla_target_hours,"Target resolution time according to the SLA, in hours.","DECIMAL(10,2)"
+sla_breached,Whether the ticket exceeded its SLA target (1/0).,BOOLEAN
